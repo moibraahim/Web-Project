@@ -1,0 +1,53 @@
+<?php
+
+require_once './Database.php';
+require_once './Faculty.php';
+
+// The id of the user logged in.
+$userid = $_SESSION['id'];
+// The id of the user we're viewing the profile of
+$viewing = $_POST['profile'];
+
+$findProfile =
+    "SELECT * 
+        FROM users
+    WHERE
+        id=$viewing";
+
+$result = $link->query($findProfile);
+
+if (!$result) {
+    // TODO: Redirect to 404
+}
+
+$has_profile_pic = null;
+
+?>
+<div>
+    <?php if (!$has_profile_pic) { ?>
+        <form action="Profile.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="profilepic">
+            <input type="submit" value="Profile Picture!">
+        </form>
+        <?php
+            $profilePicture = $_FILES['profilepic'];
+            move_uploaded_file($profilePicture['tmp_name'], './profiles/');
+            echo "Uploaded file: {$profilePicture['tmp_name']}";
+        ?>
+    <?php } else { ?>
+        <img src="<? $url ?>" alt="">
+    <?php } ?>
+    <h1>
+        <? $prof['firstname'] ?>
+        <? $profile['lastname'] ?>
+    </h1>
+    <br>
+    <h2>
+        <i>
+            <? $prof['email'] ?>
+        </i>
+    </h2>
+    <h2>
+        Faculty of: <? facultyFrom($profile['faculty']) ?> 
+    </h2>
+</div>

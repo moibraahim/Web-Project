@@ -1,0 +1,48 @@
+<?php
+
+require_once './Database.php';
+require_once './Faculty.php';
+
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+// We need to use the binary comparison
+// for case-sensitivity.
+
+$query =
+    "SELECT *
+    FROM users
+    WHERE email='$email'
+    AND BINARY password='$password'";
+
+$result = $link->query($query);
+$rows = mysqli_num_rows($result);
+
+if ($rows !== 1) {
+    echo "Please Check your Password";
+    return;
+}
+
+$user = $result->fetch_assoc();
+$facultyName = facultyFrom($user['faculty']);
+// echo json_encode($user['firstname']);
+
+// Set session variables for other pages to use.
+$_SESSION['id'] = $user['id'];
+$_SESSION['user'] = $user;
+
+echo 'ok';
+?>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hello, <?= $user['firstname'] ?>!</h1>
+    Here are the courses avalible in <?= $facultyName ?>:
+</body>
+</html> -->

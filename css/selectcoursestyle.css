@@ -1,0 +1,267 @@
+body
+{
+  margin:0px;
+  padding: 0px;
+ background-image: url("1.jpg"); 
+ font-family: calibri;  
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/);
+    background-size: cover;
+    background-position: top left;
+}
+
+.logo img {
+    height: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px #30246610;
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 8px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    background-color: #d13636;
+    color: #fff;
+    transition: all ease 0.2s;
+}
+.logo img
+{
+    height: 30px;
+}
+
+.faculties-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+}
+.heading
+{
+    align-items: center;
+    height: 150px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:#b83c3c;
+    margin: 20px;
+
+}
+.heading h1
+{
+    font-size: 50px;
+    color: #ffff;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.heading p
+{
+    font-size: 20px;
+    color: #ffff;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    height: 320px;
+    text-align: center;
+    box-shadow: 2px 2px 20px rgba(90,118,253,0.15);
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20px;
+    flex-grow: 1;
+}
+.box img
+{
+    height:150px;
+    margin:10px;
+}
+.box font
+{
+    font-size: 1.5rem;
+    color: #22252e;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.box p
+{
+    font-size: 1rem;
+    color: #777474;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
+}
+.box a
+{
+    width:150px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #b83c3c;
+    text-transform: uppercase;
+    margin: auto;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color:#b83c3c;
+    margin:0px;
+}
+.box a:hover
+{
+    background-color: #b83c3c;
+    color:#fff;
+    box-shadow: 5px 10px 30px #916969;
+    transition: all ease 0.3s;
+}
+
+.boxn
+{
+	 display: flex;
+    flex-direction: column;
+    align-items: center;
+    widows: 2000px;;
+    height: 450px;
+    text-align: center;
+    box-shadow: 2px 2px 20px rgba(90,118,253,0.15);
+    border-radius: 10px;
+    background-color:#b83c3c;
+    margin: 20px;
+    flex-grow: 1;
+}
+
+.boxn h1
+{
+    font-size: 50px;
+    color: #ffff;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.boxn a
+{
+    width:150px;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+	display: flex;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    margin: auto;
+    border-radius: 5px;
+    font-weight: 600;
+    color:#fff;
+    margin:0px;
+}
+.boxn a:hover
+{
+    background-color: #fff;
+    color:#b83c3c;
+    box-shadow: 5px 10px 30px #916969;
+    transition: all ease 0.3s;
+}
+.boxn input[type="email"]
+{
+	border-style: ridge;
+	background: #fff;
+	outline: none;
+	height: 50px;
+	font-size: 25px;
+	border-radius: 8px;
+	color:#fff;
+	color:black;
+}
+.boxn img
+{
+    height:150px;
+    margin:10px;
+
+}
+
+
+footer
+{
+	background-color: #fff;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    border-top: 1px solid #f3f4f5;
+}
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.8;
+}
+
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: #8a3ab9;
+  color: white;
+}
+

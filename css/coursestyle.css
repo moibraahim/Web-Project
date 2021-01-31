@@ -1,0 +1,41 @@
+#container
+{
+height :200vh;
+width:80%;
+background-color:#9c2828;
+margin-left:auto;
+margin-right:auto;
+padding:4%;
+}
+#frst
+{
+background-color:#ffffff;
+height :15vh;
+width:70%;
+padding:4%;
+color: black;
+margin-left:auto;
+margin-right:auto;
+}
+body
+{
+color: white;
+background-color:#DDDDDD;
+}
+#scnd
+{
+padding:4%;
+height :15vh;
+
+padding:4%;
+color: white;
+text-align:justify;
+}
+#third
+{
+margin: 60vh 100vh 25vh 0vh;
+width:30%;
+height :15vh;
+padding:4%;
+
+}

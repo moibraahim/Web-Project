@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale= 1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/SignupStyle.css">
+    <!-- Icon -->
+    <link rel="shortcut icon" href="images/fav.png">
+    <script src="js/Signup.js"></script>
+</head>
+
+<body>
+    <nav>
+        <!-- logo -->
+        <a href="#" class="logo">
+            <img src="images/logo.png" />
+        </a>
+        <!--menu-->
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#">Signup</a></li>
+            <li><a href="home.html#faculties">Faculties</a></li>
+            <li><a href="How-it-works.html"> How it works</a></li>
+        </ul>
+    </nav>
+
+    <div id="SignUp">
+        <h1>Sign up and Don't Miss Any Lecture!</h1>
+        <form method="POST" action="src/Register.php">
+            <p>First Name:</p>
+            <input type="text" id="fname" name="fname" placeholder="First Name" required>
+            <p>Last Name:</p>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            <p>Email</p>
+            <input type="email" id="email" name="email" placeholder=" Email" required>
+            <p>Password</p>
+            <input type="password" id="password" name="password" placeholder=" Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            <p>Confirm Password</p>
+            <input type="password" id="sps" name="ps" placeholder=" Confirm Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+            <p>Faculty</p>
+            <label for="faculty">Faculty:</label>
+            <select name="faculty" id="faculty">
+                <option value="1">Computer Science</option>
+                <option value="2">Engineering</option>
+                <option value="3">Pharmacy</option>
+                <option value="4">Dentistry</option>
+                <option value="5">Biotechnology</option>
+                <option value="6">Management</option>
+                <option value="7">Arts & Design</option>
+                <option value="8">Languages</option>
+                <option value="9">Mass Communication</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Sign Up">
+            <p style="color: #5e5e5e">By signing up you agree to our <a href="#" style="color: #521e1e">Terms of Use &
+                    Privacy Policy</a>.</p>
+            <hr>
+            <p style="color: #665f5f">Already have an account? <a href="login.html" style="color: #521e1e">Log In</a>.
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>
